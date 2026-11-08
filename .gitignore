@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# data & models never committed
+data/corpus/*
+!data/corpus/.gitkeep
+data/raw/
+models/
+*.gguf
+
+# vector db / grafana / prometheus local state
+qdrant_storage/
+grafana_data/
+prometheus_data/
+
+# env
+.env
